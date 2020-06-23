@@ -16,4 +16,8 @@ class Bear
         @stomach << river.fish.slice!(0, 1) if river.fish_count > 0
     end
 
+    def roar
+        return "Rar!"
+    end
+
 end
