@@ -13,7 +13,7 @@ class Bear
     end
 
     def eat_fish(river)
-        @stomach << river.fish.slice!(0, 1)
+        @stomach << river.fish.slice!(0, 1) if river.fish_count > 0
     end
 
 end

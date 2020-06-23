@@ -34,5 +34,11 @@ class BearTest < MiniTest::Test
         assert_equal(1, @bear.food_count)
         assert_equal(0, @river.fish_count)
     end
+
+    def test_eat_fish__fish_does_not_exist
+        @bear.eat_fish(@river)
+        assert_equal(0, @bear.food_count)
+        assert_equal(0, @river.fish_count)
+    end
     
 end
