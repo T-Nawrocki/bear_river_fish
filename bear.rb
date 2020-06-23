@@ -12,4 +12,8 @@ class Bear
         return @stomach.count
     end
 
+    def eat_fish(river)
+        @stomach << river.fish.slice!(0, 1)
+    end
+
 end
