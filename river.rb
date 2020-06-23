@@ -10,5 +10,9 @@ class River
     def fish_count
         return @fish.count
     end
+
+    def add_fish(fish)
+        @fish.append(fish)
+    end
     
 end
