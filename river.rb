@@ -1,6 +1,6 @@
 class River
     
-    attr_reader :name, :fish
+    attr_reader :name
 
     def initialize(name)
         @name = name
@@ -13,6 +13,10 @@ class River
 
     def add_fish(fish)
         @fish.append(fish)
+    end
+
+    def remove_fish
+        return @fish.slice!(0, 1)
     end
     
 end
